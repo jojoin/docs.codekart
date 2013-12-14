@@ -1,0 +1,48 @@
+
+.top_logo{
+  position: absolute;
+  width: 100%; height: 53px; text-align: bottom;
+  background: #f0f0f0;
+  border-top: 6px solid #46483e;
+  img{
+    position: absolute; top: 0; left: 30px; cursor: pointer;
+  }
+ .title{
+   display: block;  white-space: nowrap;
+   position: absolute; top: 0; left: 280px;
+   height: 53px; line-height: 53px;
+   font-size: 13px; font-weight: bold;
+   color: #555; text-shadow: 0 1px 0 #fff;
+  }
+}
+
+.left_nav{
+  display: block; z-index: 100;
+  position: fixed; top: 0; left: -220px;
+  height: 100%; width: 250px;
+  border-right: 3px solid #46483e;
+  box-shadow: 0 0 10px 2px #333;
+  .tip{
+    position: absolute; left: 250px; top: 35%;
+    padding: 10px 6px;
+    border-radius: 0 6px 6px 0;
+    color: #000; font-weight: bold; font-size: 14px;
+    text-shadow: 0 1px 1px #999;
+    background: #46483e;
+    box-shadow: 0 0 10px 2px #333;
+    z-index: -1;
+  }
+  .menu{
+    margin-top: 59px;
+    width: 100%; height: 100%; overflow-y: scroll;
+    background: #fff;
+  }
+}
+
+
+.content{
+  display: block; padding: 25px 0; overflow-y: scroll;
+  position: fixed; top: 59px; left: 80px;
+  height: 100%; width: 250px;
+  background: #fff;
+}
