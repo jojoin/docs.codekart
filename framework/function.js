@@ -190,17 +190,19 @@ function load_resource(filename,opt,callback){
     if(callback&&typeof callback=='function'){ //异步读取加载
         file.validPath([p1,p2],function(pathone){
             if(!pathone){
-                throw 'File does not exist: resource/'+filename;
+                var err =  'File does not exist: resource/'+filename;
+                callback(err,null);
+            }else{
+                fs.readFile(pathone, 'utf8',function(err, data){
+                    callback(err,data);
+                });
             }
-            fs.readFile(pathone, 'utf8',function(err, data){
-                if( err ) throw err;
-                callback(err,data);
-            });
         });
     }else{ //同步加载读取
         var pathone = file.validPath([p1,p2]);
         if(!pathone){
-            throw 'File does not exist: resource/'+filename;
+            var err =  'File does not exist: resource/'+filename;
+            return null; //不存在文件
         }
         return fs.readFileSync(pathone);
     }

@@ -916,7 +916,7 @@ window.frame = (function(){
 		    , he = offset.clientHeight
 		    , wi = offset.clientWidth;
 		$menu.css({height:he-59});
-		$content.css({height:he-59,width:wi-80-25});
+		$content.css({height:he-59,width:wi-80-5});
 
 	};
 	onResize();
@@ -926,6 +926,7 @@ window.frame = (function(){
 	$select.change(function(){
 	   var num = $select.val();
 	   cookie.set('version_num',num,60*60*24);
+       location.href = '/';
 	});
 
 

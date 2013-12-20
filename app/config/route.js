@@ -21,7 +21,8 @@ var route = require_core('!server/route');
 //route.view({url:'/article/:aid/comment/:cid', name:'comment'});
 
 //页面地址请求
-route.view({url:'/', name:'intro'});
+route.view({url:'/', name:'p'});
+route.view({url:'/p/:content', name:'p'});
 
 
 

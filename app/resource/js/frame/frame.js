@@ -6,6 +6,7 @@ window.frame = (function(){
         , $content = $('.content')
         , $nav = $('.left_nav')
         , $menu = $nav.find('.menu')
+        , $select = $('.top_logo .version select')
 
         ;
 
@@ -17,7 +18,7 @@ window.frame = (function(){
 
     $nav.mouseleave(function(){
         $nav.stop(0);
-        $nav.animate({left:-220},360);
+        $nav.animate({left:-234},360);
     });
 
 
@@ -27,10 +28,20 @@ window.frame = (function(){
 		    , he = offset.clientHeight
 		    , wi = offset.clientWidth;
 		$menu.css({height:he-59});
-		$content.css({height:he-59-50,width:wi-80});
+		$content.css({height:he-59,width:wi-80-5});
 
 	};
 	onResize();
+
+
+
+	$select.change(function(){
+	   var num = $select.val();
+	   cookie.set('version_num',num,60*60*24);
+       location.href = '/';
+	});
+
+
 
     return A;
 })();
