@@ -1,6 +1,8 @@
 
 <h1>Tool工具箱 - tmpl模板解析器</h1>
 
+<pre><code>var tmpl = require_tool('tmpl');</code></pre>
+
 <p>tmpl模板解析器前后端都可使用，后端tmpl模块位于<var>framework/tool/tmpl.js</var>，
   你可以采用<a href="/p/core_global">全局函数</a><dfn>var tmpl = require_tool('tmpl');</dfn>来加载。
   前端tmpl模块位于<var>app/resource/js/tmpl.js</var>，通过<dfn>CK.tmpl(str,data);</dfn>来使用。</p>

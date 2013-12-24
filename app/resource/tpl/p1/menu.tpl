@@ -25,9 +25,14 @@
   </li>
   <li><a href="/p/tool">Tool工具箱</a>
     <ul>
+      <li><a href="/p/tool_json">json</a></li>
       <li><a href="/p/tool_tmpl">tmpl模板解析</a></li>
+      <li><a href="/p/tool_object">object对象支持</a></li>
+      <li><a href="/p/tool_array">array数组支持</a></li>
+      <li><a href="/p/tool_string">string字符串支持</a></li>
+      <li><a href="/p/tool_file">file文件管理</a></li>
       <li><a href="/p/tool_step">step流程控制</a></li>
-      <li>...</li>
+      <li><a href="/p/tool_doop">doop计划任务</a></li>
     </ul>
   </li>
   <li><a href="/p/js">前端js工具</a>
