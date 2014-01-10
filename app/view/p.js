@@ -46,12 +46,14 @@ exports.data = function(callback){
 
     //检测是否有缓存
     if(conf.debug || !cache[ck]){
+        console.log('设置缓存');
         var con = load.resource('tpl/p'+pat+'/'+file+'.tpl');
         if(con===null) return that.view('404');
         var nav = load.resource('tpl/p'+pat+'/menu.tpl');
         cache[ck] = con+''; //缓存
         navchche[ck] = nav+''; //缓存
     }
+
     callback({ content: cache[ck],connav:navchche[ck]  });
 };
 
