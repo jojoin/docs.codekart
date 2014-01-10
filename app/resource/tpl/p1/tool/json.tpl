@@ -1,7 +1,7 @@
 
 <h1>Tool工具箱 - json</h1>
 
-<pre><code>var json = require_tool('json');</code></pre>
+<pre><code>var json = load.tool('json');</code></pre>
 
 <p><dfn>JSON</dfn>数据格式的编译于解析。</p>
 

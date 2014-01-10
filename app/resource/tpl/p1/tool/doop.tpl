@@ -1,7 +1,7 @@
 
 <h1>Tool工具箱 - doop计划任务</h1>
 
-<pre><code>var doop = require_tool('doop');</code></pre>
+<pre><code>var doop = load.tool('doop');</code></pre>
 
 <p>有时候我们需要定时完成一些任务，比如缓存更新、数据统计等工作，
   通常把这些工作放在每天用户访问最少的时候，比如凌晨4点。</p>
@@ -26,7 +26,7 @@ option = {
 
 
 <pre><code>//doop计划任务使用示例
-var doop = require_tool('doop');
+var doop = load.tool('doop');
 
 var tiomeout = doop.set({time:'4:30',every:'day'},function(){
 console.log(new Date().getTime());

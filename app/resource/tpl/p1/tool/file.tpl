@@ -1,7 +1,7 @@
 
 <h1>Tool工具箱 - file文件操作</h1>
 
-<pre><code>var file = require_tool('file');</code></pre>
+<pre><code>var file = load.tool('file');</code></pre>
 
 <p>这里基于 Node.js 的<dfn>fs</dfn>模块，封装了一些跟“高级”的文件操作。</p>
 

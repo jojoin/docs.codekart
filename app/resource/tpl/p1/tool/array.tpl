@@ -1,7 +1,7 @@
 
 <h1>Tool工具箱 - array数组支持</h1>
 
-<pre><code>var array = require_tool('array');</code></pre>
+<pre><code>var array = load.tool('array');</code></pre>
 
 <p><dfn>javascript</dfn>数组的扩展操作。</p>
 

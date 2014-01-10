@@ -1,7 +1,7 @@
 
 <h1>Tool工具箱 - string字符串支持</h1>
 
-<pre><code>var string = require_tool('string');</code></pre>
+<pre><code>var string = load.tool('string');</code></pre>
 
 <p><dfn>javascript</dfn>字符串的扩展操作。</p>
 

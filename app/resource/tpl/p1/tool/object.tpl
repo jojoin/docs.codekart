@@ -1,7 +1,7 @@
 
 <h1>Tool工具箱 - object对象支持</h1>
 
-<pre><code>var object = require_tool('object');</code></pre>
+<pre><code>var object = load.tool('object');</code></pre>
 
 <p><dfn>javascript</dfn>对象的扩展操作。</p>
 

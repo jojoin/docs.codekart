@@ -1,16 +1,16 @@
 
 <h1>Tool工具箱 - tmpl模板解析器</h1>
 
-<pre><code>var tmpl = require_tool('tmpl');</code></pre>
+<pre><code>var tmpl = load.tool('tmpl');</code></pre>
 
 <p>tmpl模板解析器前后端都可使用，后端tmpl模块位于<var>framework/tool/tmpl.js</var>，
-  你可以采用<a href="/p/core_global">全局函数</a><dfn>var tmpl = require_tool('tmpl');</dfn>来加载。
+  你可以采用<a href="/p/core_global">全局函数</a><dfn>var tmpl = load.tool('tmpl');</dfn>来加载。
   前端tmpl模块位于<var>app/resource/js/tmpl.js</var>，通过<dfn>CK.tmpl(str,data);</dfn>来使用。</p>
 
 <p>变量的替换，使用示例：</p>
 
 <pre><code>//tmpl模板使用示例
-var tmpl = require_tool('tmpl');
+var tmpl = load.tool('tmpl');
 
 var div = tmpl('&lt;div&gt;[#=name#]&lt;/div&gt;',{name:'abc'});
 
@@ -22,7 +22,7 @@ console.log(div); //&lt;div&gt;abc&lt;/div&gt;
   当使用<dfn>[#=</dfn>(加上等号)时，表示已字符串形式输出这个变量：</p>
 
 <pre><code>//tmpl模板使用示例
-var tmpl = require_tool('tmpl');
+var tmpl = load.tool('tmpl');
 
 var tpl = '[#for(var k in ary){ var one=ary[k];#]'
         + '&lt;p&gt;[#=one#]&lt;/p&gt;'
@@ -39,7 +39,7 @@ console.log(div); //&lt;p&gt;123&lt;/p&gt;&lt;p&gt;abc&lt;/p&gt;
   你可以像下面这样使用它：</p>
 
 <pre><code>
-var tmpl = require_tool('tmpl');
+var tmpl = load.tool('tmpl');
 
 var tpl = '[#if(this.name!==undefined){#]' //注意必须使用 this.name，直接使用name，如果未定义就会报错
 + '&lt;p&gt;[#=name#]&lt;/p&gt;'
@@ -55,7 +55,7 @@ var div = tmpl(tpl,data);
 缓存就是将第一步生成的函数字符串保存起来，避免多次正则替换，节省大部分运算。使用如下：</p>
 
 <pre><code>
-var tmpl = require_tool('tmpl');
+var tmpl = load.tool('tmpl');
 
 var tpl = '[#for(var k in ary){ var one=ary[k];#]'
 + '&lt;p&gt;[#=one#]&lt;/p&gt;'

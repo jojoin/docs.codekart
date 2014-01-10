@@ -1,7 +1,7 @@
 
 <h1>Tool工具箱 - step流程控制服务</h1>
 
-<pre><code>var step = require_tool('step');</code></pre>
+<pre><code>var step = load.tool('step');</code></pre>
 
 <p>控制流程工具，解决回调嵌套层次过多等问题。
   适用于读文件、查询数据库等回调函数相互依赖，或者分别获取内容最后组合数据返回等应用情景。</p>
@@ -22,7 +22,7 @@
 
 <p>示例代码：</p>
 
-<pre><code>var step = require_tool('step');
+<pre><code>var step = load.tool('step');
 
 step.Step(function(result,entire){
 
@@ -72,7 +72,7 @@ step.Step(function(result,entire){
 
 <p>示例代码：</p>
 
-<pre><code>var step = require_tool('step');
+<pre><code>var step = load.tool('step');
 
 step.Assem(function(step,index){
 

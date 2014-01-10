@@ -27,8 +27,8 @@ exports.stuff = inheritView('html',stuff);  //继承至view/html.js
 * 复杂的数据获取和运算，建议放在`app/model`中的模块中进行，在这里可以调用`require_model('model')`加载。
 */
 exports.data = function(callback){
-  var that = this
-  , req = this.request  //原生的request请求对象
+  var that = this  //this扩展对象
+  , req = this.request  //Codekart扩展的request请求对象
   , rps = this.response;  //原生的response返回对象
   callback({
     title: website.name,
@@ -42,6 +42,8 @@ exports.data = function(callback){
 
 <p>模板数据的获取就是<var>exports.data</var>函数，你可以不定义它，程序将跳过此页面的数据获取。
 如果定义，那么就必须调用它的参数<var>callback</var>，表示此页面的模板数据获取完成，开始解析页面。</p>
+
+<p>其中，<var>exports.data</var>函数的本地<dfn>this</dfn>对象经过了强大的扩展，详细内容请<a href="/p/core_callthis">点这里</a>。 </p>
 
 <p>数据获取回掉函数<var>callback(data,json_data)</var>其实包含两个参数，第一个参数为模板数据，
   第二个参数也会被组合，但最终它会被转换成一个<dfn>json</dfn>格式的字符串，

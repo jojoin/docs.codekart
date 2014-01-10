@@ -354,23 +354,29 @@ pre .xml .cdata {
   font-size: 22px;
   line-height: 25px;
   color: #555;
-  padding-left: 12px;
   margin: 25px 0;
-  border-left: 4px solid #555;
+}
+.content h1:before {
+  content: '✿ ';
 }
 .content h3 {
-  background-color: transparent;
-  border-bottom: 1px solid #ddd;
-  color: #555;
+  background-color: #ddd;
+  text-shadow: 0 1px 1px #fff;
+  border-top: 1px solid #777;
+  color: #444;
   font-size: 16px;
   font-weight: bold;
   margin: 28px 0 16px 0;
-  padding: 4px 0;
+  padding: 6px;
+}
+.content h3:before {
+  content: '❀  ';
 }
 .content p {
   margin: 16px 0;
   color: #333;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 24px;
 }
 .content b {
   color: #000;
@@ -378,21 +384,23 @@ pre .xml .cdata {
   padding: 0 1px;
 }
 .content a {
-  color: #1e69e1;
+  color: #1A66B8;
 }
 .content a:hover {
   text-decoration: underline;
   color: #2b6dd7;
 }
 .content big {
-  padding: 3px 6px;
+  padding: 4px 15px;
   font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
   color: #000;
   font-weight: bold;
   font-style: normal;
-  border: 1px solid #888;
-  background: #ddd;
-  border-radius: 4px;
+  border: 1px solid #bbb;
+  border-left: none;
+  border-right: none;
+  background: #eee;
+  border-radius: 0px;
   text-shadow: 0 1px 1px #fff;
 }
 .content dfn {
@@ -406,7 +414,7 @@ pre .xml .cdata {
   padding: 0 5px;
   font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
   color: #8F5B00;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 .content kbd {
@@ -416,10 +424,21 @@ pre .xml .cdata {
   font-weight: bold;
   font-style: normal;
 }
+.content code {
+  background-color: #F0F0F0;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #000;
+  margin: 0 3px;
+  padding: 0px 5px;
+  font-family: '宋体', Simsun;
+  white-space: pre;
+}
 .content pre {
   background-color: #F0F0F0;
   font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 3px;
   color: #333;
@@ -428,6 +447,8 @@ pre .xml .cdata {
 }
 .content pre code {
   padding: 0;
+  margin: 0;
+  border: none;
 }
 .content .note {
   color: #999;
@@ -444,8 +465,11 @@ pre .xml .cdata {
 .left_nav .menu > ul {
   list-style-position: inside;
   padding: 16px 0 16px 16px;
-  font-size: 15px;
+  font-size: 13px;
   list-style-type: square;
+}
+.left_nav .menu > ul > li {
+  margin: 10px 0;
 }
 .left_nav .menu > ul > li > a {
   font-weight: bold;
