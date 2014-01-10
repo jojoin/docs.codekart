@@ -391,11 +391,13 @@ pre .xml .cdata {
   color: #2b6dd7;
 }
 .content big {
+  display: inline-block;
   padding: 4px 15px;
   font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
   color: #000;
   font-weight: bold;
   font-style: normal;
+  font-size: 13px;
   border: 1px solid #bbb;
   border-left: none;
   border-right: none;

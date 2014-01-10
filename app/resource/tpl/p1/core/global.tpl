@@ -15,6 +15,11 @@
   <var>ext</var>为文件类型后缀，不传默认为<var>js</var>，注意不需要点号，
   比如正确的是<code>require_core('file','js')</code>而不是<code>require_core('file','.js')</code>，下同。</p>
 
+
+<big>load.db(name,ext);</big>
+
+<p>加载位于<var>framework/core/db</var>下的数据库支持模块。</p>
+
 <big>load.model(name,ext);</big>
 
 <p>加载位于<var>app/model/</var>下的<dfn>model</dfn>模块。</p>

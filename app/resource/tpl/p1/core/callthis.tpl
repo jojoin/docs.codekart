@@ -34,6 +34,8 @@
   }
 </code></pre>
 
+<p></p>
+
 <big>this.render302(url)</big>
 <p>返回302页面重定向，参数<var>url</var>为将要跳转过去的页面url地址。</p>
 
@@ -51,9 +53,6 @@
 
 <big>this.setCookie(name, value, expires, path, domain)</big>
 <p>设置cookie。</p>
-
-<big>this.delCookie(name)</big>
-<p>删除cookie。</p>
 
 <big>this.delCookie(name)</big>
 <p>删除cookie。</p>
