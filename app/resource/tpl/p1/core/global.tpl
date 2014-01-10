@@ -89,7 +89,7 @@
 
 <big>inheritView(parent,stuff)</big>
 
-<p>继承web页面，在<a href="/p/core_web_inherit">web页面继承</a>下有说明。</p>
+<p>继承web页面，在<a href="/p/view_inherit">web页面继承</a>下有说明。</p>
 
 <p><big>time(ms)</big>
 

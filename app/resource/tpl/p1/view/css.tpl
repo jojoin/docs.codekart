@@ -1,7 +1,7 @@
 
 <h1>web页面 - css</h1>
 
-<p>在<a href="/p/core_web_tpl">tpl模板</a>中已经了解的模板的使用方法。现在可以为模板设置css样式。</p>
+<p>在<a href="/p/view_tpl">tpl模板</a>中已经了解的模板的使用方法。现在可以为模板设置css样式。</p>
 
 <p>框架采用<dfn>less</dfn>编写<dfn>css</dfn>，
 这是用一种比<dfn>css</dfn>简介的多但十分强大的样式语言。<dfn>less</dfn>完全向下兼容<dfn>css</dfn>，
@@ -36,7 +36,7 @@ exports.stuff = inheritView('html',stuff);  //继承至view/html.js
 
 <p>其中<var>less</var>和<var>csslib</var>参数可以为一个字符串路径，也可以为一个路径数组。</p>
 
-<p>在<a href="/p/core_web_inherit">页面继承</a>，
-  <a href="/p/core_web_tpl">tpl模板</a>，<a href="/p/core_web_data">模板数据</a>，
-  <a href="/p/core_web_css">css及库</a><a href="/p/core_web_js">js及库</a>，
-  <a href="/p/core_web_other">统计代码及其它</a>文档内查看web页面配置最详细的使用方法。</p>
+<p>在<a href="/p/view_inherit">页面继承</a>，
+  <a href="/p/view_tpl">tpl模板</a>，<a href="/p/view_data">模板数据</a>，
+  <a href="/p/view_css">css及库</a><a href="/p/view_js">js及库</a>，
+  <a href="/p/view_other">统计代码及其它</a>文档内查看web页面配置最详细的使用方法。</p>

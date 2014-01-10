@@ -23,7 +23,7 @@ mv /home/codekart /home/webname            #框架更名(webname为你的网站�
 
 <p>在shell命令行下执行<code>node /home/webname/index.js</code>(把index.js文件地址换成实际位置)，
   然后再浏览器里打开<a href="http://localhost/:82">http://localhost/:82，</a>
-  可以看到CodeTank框架的<a href="http://codekart.jojoin.com/">主页面</a>，表示框架就已经运行。。
+  可以看到Codekart框架的<a href="http://codekart.jojoin.com/">主页面</a>，表示框架就已经运行。。
 </p>
 
 <h3>配置</h3>
@@ -41,7 +41,6 @@ module.exports = {
     },
 
     version: '12141',        //程序版本号 用于更新改版后的 js css 客户端缓存
-    route: true,             //是否开启默认路由匹配（在未定义url处理程序的情况下，搜索文件位置查找处理程序）
     cluster: false,          //是否开启多核支持、守护进程
     worker: 1,               //开启的worker工作者线程的数量，需要开启上面的cluster才生效，当值为0则与CPU核心数量相同
     debug: true,             //是否为调试模式  调试会将错误抛出终止进程

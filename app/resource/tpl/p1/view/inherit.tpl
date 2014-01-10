@@ -1,7 +1,7 @@
 
 <h1>web页面 - 继承</h1>
 
-<p>在<a href="/p/core_web">web页面模块化配置</a>中，你已经了解了最基本的页面模块化配置文件的使用。
+<p>在<a href="/p/view_index">web页面模块化配置</a>中，你已经了解了最基本的页面模块化配置文件的使用。
   <var>html.js</var>给出的是一个“顶级”页面的配置。</p>
 
 <p>在实际项目开发中，比如一个公司网站，我们经常需要一个全站统一的带有logo的页面头部，以及一个带有公司地址和联系方式的
@@ -33,7 +33,7 @@ exports.stuff = inheritView('html',stuff);  //继承至view/html.js
 */
 exports.data = function(callback){
   callback({
-    title: 'CodeTank  欢迎使用Node.js前后端一体化开发框架 ！'
+    title: 'Codekart  欢迎使用Node.js前后端一体化开发框架 ！'
   });
 };
 </code></pre>
@@ -43,10 +43,10 @@ exports.data = function(callback){
   参数<var>parent</var>是被继承的父级页面，参数<var>stuff</var>是当前页面增加的配置。</p>
 
 
-<p>在<a href="/p/core_web_inherit">页面继承</a>，
-  <a href="/p/core_web_tpl">tpl模板</a>，<a href="/p/core_web_data">模板数据</a>，
-  <a href="/p/core_web_css">css及库</a><a href="/p/core_web_js">js及库</a>，
-  <a href="/p/core_web_other">统计代码及其它</a>文档内查看web页面配置最详细的使用方法。</p>
+<p>在<a href="/p/view_inherit">页面继承</a>，
+  <a href="/p/view_tpl">tpl模板</a>，<a href="/p/view_data">模板数据</a>，
+  <a href="/p/view_css">css及库</a><a href="/p/view_js">js及库</a>，
+  <a href="/p/view_other">统计代码及其它</a>文档内查看web页面配置最详细的使用方法。</p>
 
 
 

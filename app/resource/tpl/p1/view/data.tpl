@@ -1,7 +1,7 @@
 
 <h1>web页面 - data模板数据</h1>
 
-<p>在<a href="/p/core_web_tpl">tpl模板</a>中已经了解的模板的使用方法。现在可以为模板填充数据。</p>
+<p>在<a href="/p/view_tpl">tpl模板</a>中已经了解的模板的使用方法。现在可以为模板填充数据。</p>
 
 <p>模板的语法，在<a href="/p/tool_tmpl">tmpl模板解析器</a>中说明，下面主要说明模板数据的获取方式。</p>
 
@@ -48,7 +48,7 @@ exports.data = function(callback){
 <p>数据获取回掉函数<var>callback(data,json_data)</var>其实包含两个参数，第一个参数为模板数据，
   第二个参数也会被组合，但最终它会被转换成一个<dfn>json</dfn>格式的字符串，
   并作为<var>data</var>的一个属性<var>json_str</var>，它的作用主要用来向前端输出js变量，
-  使用方式<a href="/p/core_web_tpl#json_str">见这里</a>。内部执行了下面的代码：</p>
+  使用方式<a href="/p/view_tpl#json_str">见这里</a>。内部执行了下面的代码：</p>
 
 <pre><code>data.json_str = json.stringify(json_data);
 </code></pre>
@@ -114,10 +114,10 @@ exports.data = function(callback){
 };
 </code></pre>
 
-<p><kbd>注意：</kbd>页面<a href="/p/core_web_inherit">继承</a>时，所有<var>callback(data)</var>中的<var>data</var>将会被合并成一个大对象，以解析tpl模板。
+<p><kbd>注意：</kbd>页面<a href="/p/view_inherit">继承</a>时，所有<var>callback(data)</var>中的<var>data</var>将会被合并成一个大对象，以解析tpl模板。
 如果父级页面和子级页面的<var>data</var>存在相同的属性，那么父级页面的数据属性将被子级覆盖。</p>
 
-<p>在<a href="/p/core_web_inherit">页面继承</a>，
-  <a href="/p/core_web_tpl">tpl模板</a>，<a href="/p/core_web_data">模板数据</a>，
-  <a href="/p/core_web_css">css及库</a><a href="/p/core_web_js">js及库</a>，
-  <a href="/p/core_web_other">统计代码及其它</a>文档内查看web页面配置最详细的使用方法。</p>
+<p>在<a href="/p/view_inherit">页面继承</a>，
+  <a href="/p/view_tpl">tpl模板</a>，<a href="/p/view_data">模板数据</a>，
+  <a href="/p/view_css">css及库</a><a href="/p/view_js">js及库</a>，
+  <a href="/p/view_other">统计代码及其它</a>文档内查看web页面配置最详细的使用方法。</p>

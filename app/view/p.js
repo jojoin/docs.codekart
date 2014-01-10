@@ -46,7 +46,6 @@ exports.data = function(callback){
 
     //检测是否有缓存
     if(conf.debug || !cache[ck]){
-        console.log('设置缓存');
         var con = load.resource('tpl/p'+pat+'/'+file+'.tpl');
         if(con===null) return that.view('404');
         var nav = load.resource('tpl/p'+pat+'/menu.tpl');
