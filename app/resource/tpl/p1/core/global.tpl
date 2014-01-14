@@ -13,7 +13,7 @@
 <p>加载位于<var>framework/core/</var>下的框架核心模块，<var>name</var>为文件名，
   可以是一个路径，比如<var>name</var>为<var>view/data</var>，即加载<var>framework/core/view/data.js</var>文件，下同。
   <var>ext</var>为文件类型后缀，不传默认为<var>js</var>，注意不需要点号，
-  比如正确的是<code>require_core('file','js')</code>而不是<code>require_core('file','.js')</code>，下同。</p>
+  比如正确的是<code>load.core('file','js')</code>而不是<code>load.core('file','.js')</code>，下同。</p>
 
 
 <big>load.db(name,ext);</big>

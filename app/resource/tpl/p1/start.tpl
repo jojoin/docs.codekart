@@ -36,8 +36,8 @@ module.exports = {
 
     //端口监听
     port: {
-        http: 83,            //线上环境修改为80
-        websocket: 93
+        http: 82,            //线上环境修改为80
+        websocket: 92
     },
 
     version: '12141',        //程序版本号 用于更新改版后的 js css 客户端缓存

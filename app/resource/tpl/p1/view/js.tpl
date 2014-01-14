@@ -26,7 +26,7 @@ exports.stuff = inheritView('html',stuff);  //继承至view/html.js
 </code></pre>
 
 <p><dfn>css</dfn>和<dfn>js</dfn>模块的组合比较简单，都是线性的追加在末尾。
-  自动通过<var>./resource/tpl/html.tpl</var>文件中的<dfn><!src_style!<dfn>和</dfn><!src_script!></dfn>标签替换成引用地址。</p>
+  自动通过<var>./resource/tpl/html.tpl</var>文件中的<var><!src_style!</var>和<var><!src_script!></var>标签替换成引用地址。</p>
 
 <p><var>jslib</var>为比较大的外部<dfn>js</dfn>库文件。通常是一些已经压缩过的js文件，例如<dfn>JQuery</dfn>。
   框架不会对其进行解析压缩合并等操作，只是简单的在html中添加引用。</p>

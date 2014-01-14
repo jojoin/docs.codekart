@@ -29,7 +29,7 @@ exports.stuff = inheritView('html',stuff);  //继承至view/html.js
 
 <p><dfn>css</dfn>和<dfn>js</dfn>模块的组合比较简单，都是线性的追加在末尾。
 <dfn>css</dfn>模块采用<dfn>less</dfn>编写，框架会自动帮你解析成<dfn>css</dfn>并压缩，
-然后自动通过<var>./resource/tpl/html.tpl</var>文件中的<dfn><!src_style!<dfn>和</dfn><!src_script!></dfn>标签替换成引用地址。</p>
+然后自动通过<var>./resource/tpl/html.tpl</var>文件中的<var><!src_style!</var>和<var><!src_script!></var>标签替换成引用地址。</p>
 
 <p><var>csslib</var>为比较大的外部<dfn>css</dfn>库文件。通常是一些已经压缩过的css文件，
   框架不会对其进行解析压缩合并等操作，只是简单的在html中添加引用。</p>

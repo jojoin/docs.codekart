@@ -408,14 +408,14 @@ pre .xml .cdata {
 .content dfn {
   padding: 0 5px;
   font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
-  color: #00620C;
+  color: #008A11;
   font-weight: bold;
   font-style: normal;
 }
 .content var {
   padding: 0 5px;
   font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
-  color: #8F5B00;
+  color: #DBA503;
   font-weight: normal;
   font-style: normal;
 }
