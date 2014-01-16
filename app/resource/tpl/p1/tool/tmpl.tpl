@@ -34,7 +34,14 @@ var div = tmpl(tpl,data);
 console.log(div); //&lt;p&gt;123&lt;/p&gt;&lt;p&gt;abc&lt;/p&gt;
 </code></pre>
 
-<p><kbd>注意：</kbd>如果在模板中使用了一个未定义的变量，解析过程就会报错。
+<p><kbd>注意：</kbd><b>在 [# #] 中的字符串字面量的包裹符，不能为 ' 单引号！例如：</b></p>
+
+<pre><code>//tmpl模板
+var tpl = '[#if(a="str")#]';  //正确
+var tpl = "[#if(a='str')#]";  //错误的使用方法!
+</code></pre>
+
+<p>如果在模板中使用了一个未定义的变量，解析过程就会报错。
   tmpl提供了一个<dfn>this</dfn>对象，它以属性的形式包含当前全部变量，
   你可以像下面这样使用它：</p>
 

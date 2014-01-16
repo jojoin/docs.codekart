@@ -4,14 +4,14 @@
 <p>Codekart 是一个十分便捷的 MVC 框架。他已经帮你出色的完成了url请求处理程序的的路由。你只需要在
 <var>app/controller/</var>目录下添加相应处理程序即可，示例如下：</p>
 
-<p>* 访问地址：<a href="http://localhost/test">http://localhost/test</a>，控制器文件：<var>app/controller/index.js</var>，
-  处理函数：<code>exports.test = function(){/*do ...*/};</code></p>
+<p>* 访问地址：<a href="http://localhost/test">http://localhost/test</a>，控制器文件：<var>app/controller/test.js</var>，
+  处理函数：<code>exports.index = function(){/*do ...*/};</code>，处理函数默认为<code>exports.index();</code></p>
 
 <p>例如以上，要处理<var>http://localhost/test</var>请求，
-  首先在<var>app/controller/</var>添加<var>index.js</var>文件，文件内容如下：</p>
+  首先在<var>app/controller/</var>添加<var>text.js</var>文件，文件内容如下：</p>
 
 <pre><code>//请求控制器
-exports.test = function(){
+exports.index = function(){
 
     /*do something ...*/
     var that = this  //this对象，集成request、response和请求返回等，详细见下文。
