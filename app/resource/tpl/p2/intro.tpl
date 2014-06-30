@@ -1,32 +1,35 @@
 
-<h1>简介</h1>
+<h1>开始</h1>
 
-<h3>欢迎使用 Codekart</h3>
+<h3>欢迎使用<dfn>Codekart</dfn></h3>
 
-<p>Codekart 是一套给 Node.js 开发者使用的应用程序开发框架和工具包。
+<p><dfn>Codekart</dfn>是一套给 Node.js 开发者使用的应用程序开发框架和工具包。
   它提供一套丰富的标准库以及简单的接口和逻辑结构，
   其目的是使开发人员更快速地进行项目开发。
-  使用 Codekart 可以减少代码的编写量，
+  使用<dfn>Codekart</dfn>可以减少代码的编写量，
   并将你的精力投入到项目的创造性开发上。</p>
 
-<h3>Codekart 特点</h3>
+<h3><dfn>Codekart</dfn>特点：<kbd>[ 精简 / 轻量 / 强大 / 高性能 ]</kbd></h3>
 
-<p>Codekart 是一个轻量级但功能强大的 Node.js 框架，
-让你在高性能 javascript 引擎 V8 下， 如同 PHP 一样简单而且快速地建立 web 站点。</p>
+<p><dfn>Codekart</dfn>是一个轻量级但功能强大的 Node.js 框架，
+让你在高性能 javascript 引擎 V8 下，便捷地以 MVC 模式开发你的 web 应用程序。</p>
 
-<pre>
-• 它是轻量级，同时也是功能强大的。因为你只需要加载最基本的模块，
-  并在你使用其他功能时按需加载，不用一次性载入臃肿而庞大的库。
+<h5>高性能 HTTP 服务器</h5>
+<p><dfn>Codekart</dfn>处理 http 请求的性能接近原生 Node.js 代码: <code>http.createServer()</code>，
+  原因是框架只是对此函数做了简单的封装，其性能的损耗仅仅只有一个 url 正则匹配运算，路由请求处理程序。</p>
 
-• 它是零配置的。你只需要把文件拷贝至服务器目录，然后执行 node index.js ，
-  框架就成功启动了。
+<h5>便捷的静态文件服务器</h5>
+<p>把文件放入<var>/static</var>目录下，启动<dfn>Codekart</dfn>，url 访问，搞定！</p>
 
-• 它是精简的。Codekart 信奉 JQuery 的设计哲学： write less do more 。
+<h5>web 页面模块化支持</h5>
+<p>实际上，这是<dfn>Codekart</dfn>最出色的部分！它是前后端一体化的，可以像写配置文件一样编写web页面，
+  框架自动完成  js、css 、tpl 文件的模块化加载、合并、压缩，
+  并在html里引用，自动完成 html 模板的解析，并且支持页面继承和多态，一切就是那么简单轻松！</p>
 
-• 它是前后端一体化的。你可以像写配置文件一样编写web页面，
-  我们自动帮你完成 js、css 文件的模块化加载和压缩合并，
-  并自动在html里引用。自动完成html模板的解析。一切都是那么简单而富有条理。
+<h5>WebSocket 实时应用</h5>
+<p>提供统一 API 接口，兼容非原生支持 WebSocket 的浏览器，服务端自动路由处理程序。</p>
 
-• 集成了常用的前端控件，例如翻页和滚动插件，tip 提示框等等
-</pre>
+<h5>丰富的工具箱</h5>
+<p><dfn>Codekart</dfn>准备了一系列强大的前后端工具集合，涉及文件读取，文件上传，数据运算，流程控制，任务计划等诸多方面。</p>
 
+<h4>阅读文档了解<dfn>Codekart</dfn>更多更强大的功能！</h4>

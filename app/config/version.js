@@ -10,9 +10,10 @@
 
 module.exports = {
     list:[
-        {code:'0.1.0',num:1,doc:true}
+        {code:'0.1.0',num:1,doc:true},
+        {code:'0.2.*',num:2,doc:true}
     ],
-    cur_num: 1 //当前版本编号
+    cur_num: 2 //当前版本编号
 };
 
 
