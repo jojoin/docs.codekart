@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 docs for Codekart
+=======
+docs.dodekart
+>>>>>>> origin/master
 =======
 
 ![codetank](http://codekart.jojoin.com/cssimg/codekart/logo.png)
