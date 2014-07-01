@@ -392,14 +392,11 @@ pre code .keyword {
   color: #000;
   font-size: 15px;
   font-weight: bold;
-  margin: 16px 0 16px 0;
+  margin: 16px 0 16px 7px;
   padding: 0;
 }
 .content h5:before {
   content: '§  ';
-}
-.content h5:after {
-  content: '  §';
 }
 .content ul {
   font-size: 14px;
