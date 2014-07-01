@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-docs for Codekart
-=======
-docs.dodekart
->>>>>>> origin/master
-=======
+﻿docs for Codekart
 
 ![codetank](http://codekart.jojoin.com/cssimg/codekart/logo.png)
 
