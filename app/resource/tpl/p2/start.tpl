@@ -9,6 +9,8 @@
   注意：本框架与<dfn>Express</dfn>等有所区别，你不能通过<code>require('codekart');</code>来使用它，
 而是在它的目录下做开发（原因是 Codekart 已经为你做好目录结构定义和代码模块化等工作）。</p>
 
+<p><a href="https://nodei.co/npm/codekart/"><img src="https://nodei.co/npm/codekart.png?downloads=true&satr=true"></a></p>
+
 <p>通过<dfn>npm</dfn>方式安装，下面是在linux下示例：</p>
 
 <pre><code>cd /home                                   #进入你的安装目录

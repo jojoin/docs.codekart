@@ -5,7 +5,10 @@
   <a target="_blank"
      href="http://shang.qq.com/wpa/qunwpa?idkey=f1c376034f496a66d144e4cca4ff7beb2e2fd8aed89c5b81b3ba7a435f031e68">
     <img style="vertical-align:middle;text-align:center;cursor: pointer;" border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Codekart官方群" title="Codekart官方群"></a> |
-  fork me on <a target="_blank" href="https://github.com/yangjiePro/Codekart"> Github</a>
+ <a href="https://gitter.im/yangjiePro/Codekart">
+    <img style="vertical-align:middle;text-align:center;cursor: pointer;" src="https://badges.gitter.im/yangjiePro/Codekart.png" /></a> |
+ <a target="_blank" href="https://github.com/yangjiePro/Codekart">
+    <img style="vertical-align:middle;text-align:center;cursor: pointer;" src="/cssimg/codekart/forkme.png" /></a>
   <br>
   <br>
   作者：<a target="_blank" href="http://jojoin.com/user/1">杨捷</a> |
