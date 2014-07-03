@@ -1,9 +1,10 @@
 
 <ul>
-  <li><a href="/p/intro">开始</a>
+  <li><a href="/p/intro">Codekart</a>
     <ul>
-      <li><a href="/p/start">安装及配置</a></li>
-      <li><a href="/p/dir">目录结构说明</a></li>
+      <li><a href="/p/intro_start">安装</a></li>
+      <li><a href="/p/intro_dir">目录结构说明</a></li>
+      <li><a href="/p/intro_config">框架配置</a></li>
     </ul>
   </li>
   <li><a href="/p/core_index">核心</a>
