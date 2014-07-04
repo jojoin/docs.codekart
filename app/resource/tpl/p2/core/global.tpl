@@ -81,9 +81,8 @@
 
 <p><code>read.app()</code>为<dfn>read</dfn>加载的父级方法，通过<var>filename</var>参数，
   你可以加载<var>app</var>目录下的任意文件，
-  比如<code>load.app('lib/user.js')</code>就会读取并返回<var>app/lib/user.js</var>的文件内容，
+  比如<code>read.app('lib/user.js')</code>就会读取并返回<var>app/lib/user.js</var>的文件内容，
   如果不存在文件，就会返回<var>null</var>。</p>
-
 
 <h3>其他</h3>
 
