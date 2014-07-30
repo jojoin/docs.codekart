@@ -17,14 +17,14 @@
 <h3>向客户端返回数据</h3>
 
 <h4>this.render(str)</h4>
-<p>向浏览器返回字符串内容。</p>
+<p>向客户端返回字符串内容。</p>
 
 <h4>this.renderJson(jsonStr)</h4>
-<p>向浏览器返回<dfn>JSON</dfn>格式的字符串内容。</p>
+<p>向客户端返回<dfn>JSON</dfn>格式的字符串内容。</p>
 
 
 <h4>this.renderApi(code,msg,data)</h4>
-<p>向浏览器返回特定的<dfn>JSON</dfn>格式的字符串内容，格式如下：</p>
+<p>向客户端返回特定的<dfn>JSON</dfn>格式的字符串内容，格式如下：</p>
 
 <pre><code>//api返回的json格式
   {
@@ -59,6 +59,7 @@
 
 <h3>其他</h3>
 
+<a href="#formdata"></a>
 <h4>this.formdata(callback)</h4>
 <p>处理提交表单数据。<var>callback</var>接收三个参数：</p>
 <pre><code>//表单数据处理回调

@@ -1,5 +1,11 @@
 
-<h1>Codekart</h1>
+<!--
+<br>
+
+<div style="width: 100%;text-align:center;">
+  <img src="http://codekart.jojoin.com/cssimg/codekart/banner.png">
+</div>
+-->
 
 <h3>欢迎使用<dfn>Codekart</dfn></h3>
 
@@ -22,15 +28,17 @@
   原因是框架只是对此函数做了简单的封装，其性能的损耗仅仅只有一个 url 正则匹配运算，路由请求处理程序。</p>
 
 <h5>便捷的静态文件服务器</h5>
-<p>把文件放入<var>/static</var>目录下，启动<dfn>Codekart</dfn>，url 访问，搞定！</p>
+<p>把文件放入<var>static/</var>目录下，启动<dfn>Codekart</dfn>，url 访问，搞定！支持自定义root目录、缓存时间。</p>
 
 <h5>web 页面模块化支持</h5>
 <p>实际上，这是<dfn>Codekart</dfn>最出色的部分！它是前后端一体化的，可以像写配置文件一样编写web页面，
   框架自动完成  js、css 、tpl 文件的模块化加载、合并、压缩，
   并在html里引用，自动完成 html 模板的解析，并且支持页面继承和多态，一切就是那么简单轻松！</p>
 
+<!--
 <h5>WebSocket 实时应用</h5>
 <p>提供统一 API 接口，兼容非原生支持 WebSocket 的浏览器，服务端自动路由处理程序。</p>
+-->
 
 <h5>丰富的工具箱</h5>
 <p><dfn>Codekart</dfn>准备了一系列强大的前后端工具集合，涉及进程通信，数据缓存，文件读取，文件上传，数据采集与处理，流程控制，任务计划等诸多方面。</p>

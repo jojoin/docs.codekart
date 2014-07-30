@@ -6,6 +6,15 @@
   <var>framework</var>目录下存放的是框架核心文件，除非发现严重BUG等特殊情况，一般不应该修改或删除其中的文件，
   否则可能<b>导致框架无法使用！</b></p>
 
+<!--
+│       │          ├─ database.js  //数据库配置文件夹
+│       │          ├─ log.js   //日志文件配置
+│       │          ├─ email.js   //smtp 邮件发送配置
+│       │          └─ website.js //网站信息，如名称、域名等
+ -->
+<!--
+│       ├─ websocket ┐   //websocket数据处理控制器
+-->
 <pre><code>│
 ├─ app ┐ //程序文件夹,开发工作在此进行
 │       ├─ config ┐  //配置文件夹
@@ -13,22 +22,17 @@
 │       │          │
 │       │          ├─ config.js  //常用配置文件（如监听端口、开启debug模式等）
 │       │          ├─ define.js  //定义的一些常量 （如mysql或redis的key名称等）
-│       │          ├─ database.js  //数据库配置文件夹
 │       │          ├─ route.js   //url路由文件夹，定义或重定向url请求处理程序
-│       │          ├─ log.js   //日志文件配置
-│       │          ├─ email.js   //smtp 邮件发送配置
-│       │          └─ website.js //网站信息，如名称、域名等
 │       │
 │       ├─ controller ┐  //请求处理控制器
 │       ├─ lib ┐     //库模块文件夹，用来放置第三方的库或模块
 │       ├─ tool ┐    //工具箱，放置自己写的常用工具或方法等
 │       ├─ model ┐   //数据处理模块，一般和数据库操作相关
 │       ├─ view ┐    //web页面配置(选择css、js、tpl模块，获取html模板数据)
-│       ├─ websocket ┐   //websocket数据处理控制器
 │       └─ resource ┐  //web页面素材
-│                     ├─ js   //js前端页面模块
-│                     ├─ css  //css前端页面模块
-│                     └─ tpl  //html模板前端页面模块
+│                     ├─ js ┐   //js前端页面模块
+│                     ├─ css ┐  //css前端页面模块
+│                     └─ tpl ┐  //html模板前端页面模块
 │
 ├─ framework ┐
 │             ├─ config ┐   //框架配置文件夹

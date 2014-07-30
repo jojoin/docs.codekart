@@ -10,30 +10,31 @@
 <p>使用 Codekart 可以方便的配置页面的继承关系，继承的内容包括
   <dfn>tpl模板</dfn>、<dfn>css</dfn>、<dfn>js</dfn>和<dfn>模板数据</dfn>。</p>
 
-<p>下面是一个继承至<var>html.js</var>的页面<var>frame/view/home.js</var>，配置方法与顶级页面有所不同。</p>
+<p>下面是一个继承至<var>html.js</var>的页面<var>framework/view/html.js</var>，配置方法与顶级页面有所不同。</p>
 
-<pre><code>//当前页面增加的配置
+<pre><code>//html页面定义
 var stuff = {
-  tpl:{body:'home'},
-  less:'home'
+
+  tpl:{html:'html'},  //页面的tpl模板文件列表  app/resource/tpl
+  less:'html'  //页面的css模板文件列表  app/resource/less
+
 };
 
-//【继承关键代码】
-//继承父级页面 和 必须给本模块加上对外接口，以便其他页面继承
-exports.stuff = inheritView('html',stuff);  //继承至view/html.js
-//exports.stuff = inheritView('html/frame',stuff);  //继承至view/html/frame.js
+
+//必须给本模块加上对外接口，以便其他页面继承
+exports.stuff = inheritView('base',stuff); //继承至base.js
 
 
 /**
-* 页面模板数据获取
-* 可以不定义此函数，程序将跳过本页面的数据获取
-* @callback 必须调用 ，表示数据获取完成，进行子级页面数据获取，不调用则会一直等待不能进行下一步！！！
-* 在callback中返回的变量可以在tpl模板中使用，在这里可以进行数据库的查询等等。
-* 复杂的数据获取和运算，建议放在`app/model`中的模块中进行，在这里可以调用`load.model('model')`加载。
+* tpl模板数据获取函数
+* @param callback 返回模板数据
 */
 exports.data = function(callback){
+  var that = this
+  , req = this.request;  //原生的request请求对象
+
   callback({
-    title: 'Codekart  欢迎使用Node.js前后端一体化开发框架 ！'
+    title: 'Codekart'
   });
 };
 </code></pre>
@@ -42,6 +43,8 @@ exports.data = function(callback){
 <p>你已经注意到，继承的页面使用<code>inheritView(parent,stuff)</code>继承函数，
   参数<var>parent</var>是被继承的父级页面，参数<var>stuff</var>是当前页面增加的配置。</p>
 
+
+<p><kbd>[注意]</kbd>所有的页面，包括框架自带的，或开发者自定义的页面，都必须直接或间接<a href="/p/view_inherit">继承</a>至<var>base.js</var>。</p>
 
 <p>在<a href="/p/view_inherit">页面继承</a>，
   <a href="/p/view_tpl">tpl模板</a>，<a href="/p/view_data">模板数据</a>，

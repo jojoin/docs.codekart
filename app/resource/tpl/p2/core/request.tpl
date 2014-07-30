@@ -38,9 +38,10 @@
 
 <h4>request.post</h4>
 
-<p>url 请求解析处理后的<dfn>POST</dfn>参数。<kbd>注意：</kbd>当请求的<var>content-type</var>类型为
-  <var>multipart/form-data</var>时（例如文件上传等），<var>request.post</var>不可用。需要在
-  <a href="/p/core_fileup">fileup</a>文件上传模块中处理。</p>
+<p>url 请求解析处理后的<dfn>POST</dfn>参数。</p>
+<p><kbd>注意：</kbd>当请求的<var>content-type</var>类型为
+  <var>multipart/form-data</var>等时（文件上传），<var>request.post</var>不可用。需要在
+  <a href="/p/core_callthis#formdata">formdata</a>表单处理中处理。</p>
 
 <h4>request.cookie</h4>
 
@@ -48,7 +49,7 @@
 
 <h4>request.route</h4>
 
-<p>自定义的<a href="/p/core_route">url路由</a>规则。</p>
+<p>自定义的<a href="/p/core_route">url路由</a>规则。在 view 、controller 和 static 的不同处理环境下，数据也不相同。</p>
 
 
 

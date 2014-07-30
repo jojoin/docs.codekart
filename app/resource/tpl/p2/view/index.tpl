@@ -10,50 +10,26 @@
 
 <p>幸好，Codekart 可以为你把切分成模块的 js、css 和 html 组合起来，压缩并自动添加引用。我们将通过一个示例来详细讲解用法。</p>
 
-<p>在<var>framework/view</var>文件夹下面包含四个文件<var>html.js</var>,<var>home.js</var>,<var>404.js</var>和<var>error.js</var>。
+<p>在<var>framework/view</var>文件夹下面包含四个文件<var>base.js</var>,<var>html.js</var>,<var>404.js</var>和<var>error.js</var>。
   这是框架自带的基础页面，你不需要修改它。如果需要自定义这几个页面，
-  你可以在<var>app/view</var>下新建同名的文件，并按照配置自定义。框架会优先调用<dfn>app/view</dfn>下面的，
+  你可以在<var>app/view</var>下新建同名的文件，并按照配置自定义。框架会优先调用<var>app/view</var>下面的，
   而<var>framework/view</var>下的就会被“重载”。</p>
 
-<p>它们就是四个基础web页面，其中其余三个页面都是从<var>html.js</var><a href="/p/view_inherit">继承</a>过来。</p>
+<p>它们就是四个基础web页面，其中其余三个页面都是从<var>base.js</var><a href="/p/view_inherit">继承</a>过来。</p>
 
-<p><var>html.js</var>内容如下：</p>
+<p><var>base.js</var>内容如下：</p>
 
 <pre><code>//web页面顶级页面定义
 exports.stuff = {
-  tpl:{html:'html'},  //页面的tpl模板文件列表，模块位置： app/resource/tpl
+  tpl:[],  //页面的tpl模板文件列表  app/resource/tpl
   tplpre:[],  //待用的tpl文件列表 会被加入js文件里面待用  保存在app/resource/tpl文件夹 格式{note_list:'abc/abc'}
-  less:'html',  //页面的css模板文件列表 ，模块位置： app/resource/less
-  csslib:[],    //css库文件，在static/csslib目录下
-  js:[  //js模块文件，模块位置： app/resource/js
-    'functions',
-    'json',
-    'cookie',
-    'jq-extend',
-    'tmpl',
-    'pro'
-  ], //页面的js模板文件列表
-  jslib: 'jquery-2.0.3.min'  //js库文件列表，在static/jslib目录下
-};
-
-
-var website = load.config('website');
-
-/**
-* tpl模板数据获取函数
-* @param callback 返回模板数据
-*/
-exports.data = function(callback){
-  var that = this
-  , req = this.request;  //原生的request请求对象
-  callback({
-    title: website.name,
-    time: req.time,
-    website: website
-  },{
-    website: website
-  });
+  less:[],  //页面的css模板文件列表  app/resource/less
+  csslib:[],  //css库文件，在static/csslib目录下
+  js:['init.ck'], //页面的js模板文件列表   app/resource/js
+  jslib: [],  //js库文件列表，在static/jslib目录下
+  inherit:[] //父级页面继承链
 };</code></pre>
+
 
 <p><kdb>注意：</kdb>tpl ,  tpl_pre , less , csslib , js , jslib 配置变量可以是一个路径文件名称，也可以是一个文件名数组，并且省略后缀名。</p>
 
