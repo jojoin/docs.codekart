@@ -61,7 +61,7 @@ var div = tmpl(tpl,data);
 <pre><code>
 var tmpl = load.tool('tmpl');
 
-var tpl = '<p>name:[:=name?:], name:[:=name?默认值:]</p>';
+var tpl = '&lt;p&gt;name:[:=name?:], name:[:=name?默认值:]&lt;/p&gt;';
 var data = {no:'abc'};
 
 var div = tmpl(tpl,data);
