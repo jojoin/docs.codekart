@@ -96,5 +96,3 @@ var div = render(data); //传入data，代入变量，解析成最终结果
 console.log(div); //&lt;p&gt;123&lt;/p&gt;&lt;p&gt;abc&lt;/p&gt;
 </code></pre>
 
-<p><kbd>注意：</kbd><b>模板字符串不能出现<dfn>'</dfn>单引号，否则将会报错。
-  你可以使用转义，即加一个反斜杠<dfn>\'</dfn>。</b></p>
