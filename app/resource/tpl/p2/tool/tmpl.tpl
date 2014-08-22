@@ -56,6 +56,26 @@ var data = {name:'abc'};
 var div = tmpl(tpl,data);
 </code></pre>
 
+<p>你还可以这样方便地使用未定义的变量：<p>
+
+<pre><code>
+var tmpl = load.tool('tmpl');
+
+var tpl = '<p>name:[:=name?:], name:[:=name?默认值:]</p>';
+var data = {no:'abc'};
+
+var div = tmpl(tpl,data);
+
+//<p>name:, name:默认值</p>
+
+</code></pre>
+
+
+<p><dfn>[:=name?:]</dfn>表示在变量<var>name</var>未定义时，不抛出错误，而输出空字符串。
+<dfn>[:=name?默认值:]</dfn>表示在<var>name</var>未定义时，输出问号<var>?</var>后面的直至<var>:]</var>之间的字符串：<dfn>默认值</dfn>。</p>
+
+
+
 <p>如果需要多次解析同一个模板，则可以将模板编译的结果缓存起来，
 使用时直接代入变量。tmpl模板解析分两步，第一步将tpl模板字符串编译成一个函数字符串，
 这需要大量的正则替换，耗时较长；第二步执行<dfn>new Function()</dfn>将变量代入，返回最终结果。
