@@ -65,8 +65,7 @@ var tpl = '&lt;p&gt;name:[:=name?:], name:[:=name?默认值:]&lt;/p&gt;';
 var data = {no:'abc'};
 var div = tmpl(tpl,data);
 
-//<p>name:, name:默认值</p>
-
+//&lt;p&gt;name:, name:默认值&lt;/p&gt;
 </code></pre>
 
 <p><dfn>[:=name?:]</dfn>表示在变量<var>name</var>未定义时，不抛出错误，而输出空字符串。
