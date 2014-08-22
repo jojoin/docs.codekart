@@ -63,17 +63,14 @@ var tmpl = load.tool('tmpl');
 
 var tpl = '&lt;p&gt;name:[:=name?:], name:[:=name?默认值:]&lt;/p&gt;';
 var data = {no:'abc'};
-
 var div = tmpl(tpl,data);
 
 //<p>name:, name:默认值</p>
 
 </code></pre>
 
-
 <p><dfn>[:=name?:]</dfn>表示在变量<var>name</var>未定义时，不抛出错误，而输出空字符串。
 <dfn>[:=name?默认值:]</dfn>表示在<var>name</var>未定义时，输出问号<var>?</var>后面的直至<var>:]</var>之间的字符串：<dfn>默认值</dfn>。</p>
-
 
 
 <p>如果需要多次解析同一个模板，则可以将模板编译的结果缓存起来，
