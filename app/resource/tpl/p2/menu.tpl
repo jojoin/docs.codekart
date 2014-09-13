@@ -13,6 +13,7 @@
       <li><a href="/p/core_global">全局对象/函数</a></li>
       <li><a href="/p/core_request">request 对象扩展</a></li>
       <li><a href="/p/core_callthis">处理程序 this 对象</a></li>
+      <li><a href="/p/core_extendthis">自定义/扩展 this 对象</a></li>
       <li><a href="/p/core_controller">controller 控制器</a></li>
       <li><a href="/p/core_route">route 控制器路由</a></li>
       <li><a href="/p/core_static">静态文件服务</a></li>
