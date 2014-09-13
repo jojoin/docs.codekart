@@ -86,6 +86,5 @@ function(err, fields, files){
   ... // 更多上传的文件
 }</code></pre>
 
-<p><dfn>注意：</dfn>如果你仅仅想</p>
 
 
