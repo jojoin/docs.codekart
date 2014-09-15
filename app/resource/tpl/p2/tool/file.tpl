@@ -17,3 +17,11 @@
 <p>按文件名数组读取文件并按顺序合并。参数<var>pathAry</var>是一个文件路径数组，
   参数<var>merger</var>为<var>true</var>则按路径顺序合并读取的文件内容，否则不合并返回按路径数组次序的文件内容数组。
   <var>callback</var>调用时会传入读取的文件内容，字符串或者数组。</p>
+  
+<p><h4>mkdirs(dirpath, mode, callback)</h4></p>
+
+<p>一次性创建多级目录。</p>
+
+<p><h4>mkdirsSync(dirpath, mode)</h4></p>
+
+<p><code>mkdirs</code>的同步版本。</p>
