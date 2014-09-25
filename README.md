@@ -1,4 +1,4 @@
-docs for Codekart 我的文章
+docs for Codekart
 ================
 
 ![codetank](http://codekart.jojoin.com/cssimg/codekart/logo.png)
