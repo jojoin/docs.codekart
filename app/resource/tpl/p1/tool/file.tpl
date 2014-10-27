@@ -20,7 +20,7 @@
   
 <p><big>mkdirs(path,callback)</big></p>
 
-<p>递归创建目录多层目录。参数<var>callback</var>仅接受一个错误信息作为参数，创建成功则为<var>null</var>。</p>
+<p>递归创建多层目录。参数<var>callback</var>仅接受一个错误信息作为参数，创建成功则为<var>null</var>。</p>
   
 <p><big>mkdirsSync(path)</big></p>
 
