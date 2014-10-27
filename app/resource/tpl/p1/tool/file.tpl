@@ -28,5 +28,8 @@
 
 <p><big>rename(origin,target,callback)</big></p>
 
-<p>将文件从<var>origin</var>位置移动到<var>target</var>，<var>callback</var>仅接受一个错误信息作为参数，操作成功则为<var>null</var>。</p>
+<p>将文件从<var>origin</var>位置移动到<var>target</var>位置，如果目录相同即为重命名文件。<var>callback</var>仅接受一个错误信息作为参数，操作成功则为<var>null</var>。</p>
   
+<p><big>renameSync(origin,target)</big></p>
+
+<p><var>rename</var>的同步版本，返回值为错误信息。</p>
