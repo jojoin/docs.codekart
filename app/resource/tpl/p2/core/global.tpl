@@ -8,6 +8,18 @@
 
 <p>全局环境，指定配置文件目录，或根据不同环境定义不同的配置内容。更多看<a href="/p/intro_config">这里</a>。</p>
 
+<h4>CK_PATH</h4>
+
+<p>框架绝对路径。</p>
+
+<h4>CK_PATH_APP</h4>
+
+<p>框架绝对路径，app开发文件夹。</p>
+
+<h4>CK_PATH_CONFIG</h4>
+
+<p>当前配置环境下的配置文件绝对路径，根据<var>ENVIRONMENT</var>的值而不同。</p>
+
 <h3><b>load对象</b> - 模块加载</h3>
 
 <p>load 对象用来加载一些特定的模块，是全局函数<code>require</code>的封装。它包含一些方法：</p>
