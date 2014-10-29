@@ -29,10 +29,10 @@
 
 <p>拷贝（深拷贝）对象，并返回它的副本（一个新的对象，而不是引用）。</p>
 
-<h4>verifyAttr(obj,param,strict)</h4>
+<h4>InvalidAttr(obj, attrs, strict)</h4>
 
-<p>验证对象是否存在列出的所有属性。参数<var>obj</var>要验证的属性名字符串数组，或逗号隔开的字符串。
+<p>验证对象是否存在无效的属性，并返回第一个无效的属性名称，全部满足则返回null。参数<var>attrs</var>要验证的属性名字符串，或属性名数组。
 参数<var>strict</var>表示是否以严格模式验证（非严格模式只判断是否存在属性，
-严格模式将所有属性为 0、null、undefined、false、'' (空字符串)、NaN 验证为不存在）。</p>
+严格模式将所有属性为 0、null、undefined、false、'' (空字符串)、NaN 验证为无效）。</p>
 
 
