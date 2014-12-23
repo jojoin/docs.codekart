@@ -1,7 +1,7 @@
 
 <h1>web页面 - tpl模板</h1>
 
-<p>Codekart 使用自建的<dfn>tmpl</dfn>解析器，简单而且高效，<a href="/p/tool_tmpl">点这里</a>了解它如何使用。</p>
+<p>Codekart 使用自建的<dfn>tppl</dfn>解析器，简单而且高效，<a href="/p/tool_tppl">点这里</a>了解它如何使用。</p>
 
 <p>同一个页面的模板可以切分为不同的模块，它们保存在<var>app/resource/tpl/</var>目录下。</p>
 
@@ -61,7 +61,7 @@ exports.data = function(callback){
 
 
 <p>请注意上面的模板标签，<dfn>&lt;!body!&gt;</dfn>是为子级模板预留的tpl插入位置。
-  <dfn> [#=title#]</dfn>为<a href="/p/tool_tmpl">tmpl模板</a>语法，
+  <dfn> [#=title#]</dfn>为<a href="/p/tool_tppl">tppl模板</a>语法，
   在<a href="/p/view_data">模板数据</a>内定义。用户向前端输出 js 变量或进行逻辑运算。</p>
 
 <p>新建路径为<var>app/view/frame.js</var>的页面配置文件，文件内容如下：</p>
@@ -106,7 +106,7 @@ exports.stuff = inheritView('html',stuff);  //继承至view/html.js
 
 <h3>前端预备tpl模板</h3>
 
-<p>有时候，我们需要同过 ajax 异步获取 json 数据，然后解析成 html 显示到页面。模板引擎<a href="/p/tool_tmpl">tmpl</a>即可在前端通过<code>C.tmpl()</code>使用。更多关于框架js模块，<a href="/p/js">点这里</a>查看详情。</p>
+<p>有时候，我们需要同过 ajax 异步获取 json 数据，然后解析成 html 显示到页面。模板引擎<a href="/p/tool_tppl">tppl</a>即可在前端通过<code>C.tppl()</code>使用。更多关于框架js模块，<a href="/p/js">点这里</a>查看详情。</p>
 
 <p>在页面的<var>stuff</var>配置中，<var>tplpre</var>配置项即为前端预备模板。这些定义的模板将被压缩成一个全局js对象<code>Tpls</code>，作为预备模板容器输出至前端。例如配置：<code>tplpre: [{tplname: 'tplpathname'}]</code>，前端js获取模板内容：<code>var tpl = Tpls.tplname;</code>。</p>
 
