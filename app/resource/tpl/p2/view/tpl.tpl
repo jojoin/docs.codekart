@@ -44,7 +44,7 @@ exports.data = function(callback){
 &lt;html lang="zh-CN"&gt;
   &lt;head&gt;
     &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-    &lt;title&gt;[:=title:]&lt;/title&gt; &lt;!--[:=title:] <a href="/p/view_data">模板变量</a>输出--&gt;
+    &lt;title&gt;[=:title:]&lt;/title&gt; &lt;!--[=:title:] <a href="/p/view_data">模板变量</a>输出--&gt;
   &lt;/head&gt;
   &lt;body&gt;
 
