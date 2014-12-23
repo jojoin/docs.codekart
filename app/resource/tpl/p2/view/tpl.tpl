@@ -61,7 +61,7 @@ exports.data = function(callback){
 
 
 <p>请注意上面的模板标签，<dfn>&lt;!body!&gt;</dfn>是为子级模板预留的tpl插入位置。
-  <dfn> [#=title#]</dfn>为<a href="/p/tool_tppl">tppl模板</a>语法，
+  <dfn> [=:title:]</dfn>为<a href="/p/tool_tppl">tppl模板</a>语法，
   在<a href="/p/view_data">模板数据</a>内定义。用户向前端输出 js 变量或进行逻辑运算。</p>
 
 <p>新建路径为<var>app/view/frame.js</var>的页面配置文件，文件内容如下：</p>
