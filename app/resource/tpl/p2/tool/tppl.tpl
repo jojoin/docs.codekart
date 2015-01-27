@@ -57,15 +57,25 @@ var div = tppl(tpl,data);
 <pre><code>
 var tppl = load.tool('!tppl');
 
-var tpl = '&lt;p&gt;name:[=:this.name||"默认值":]&lt;/p&gt;';
+var tpl = '&lt;p&gt;name:[=:(this.name||"默认值"):]&lt;/p&gt;';
 var data = {no:'abc'};
 var div = tppl(tpl,data);
 
 //name:默认值&lt;/p&gt;
 </code></pre>
 
-<p><dfn>[:if(this.name||""){}:]</dfn>表示在变量<var>name</var>未定义时，不抛出错误，而输出空字符串。
-<dfn>[=:this.name||"默认值":]</dfn>表示在<var>name</var>未定义时，输出字符串：<dfn>默认值</dfn>。</p>
+<p><dfn>[:(this.name||""):]</dfn>表示在变量<var>name</var>未定义时，不抛出错误，而输出空字符串。
+<dfn>[=:(this.name||"默认值"):]</dfn>表示在<var>name</var>未定义时，输出字符串：<dfn>默认值</dfn>。</p>
+<pre><code> //默认值用法示例
+
+[=:(this.name||""):] //正确
+[=:(this.name||"默认值"):] //正确
+[=:(this.name||defname):] //正确，defname必须存在
+
+[=:this.name||"":] // 错误：无括号
+[=:(name||""):] // 错误：没加 this. 前缀
+[=:(this.name||''):] // 错误：不能使用单引号 '
+</code></pre>
 
 
 <p>如果需要多次解析同一个模板，则可以将模板编译的结果缓存起来，
